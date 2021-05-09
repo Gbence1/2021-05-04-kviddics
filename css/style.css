@@ -5,7 +5,7 @@ body {
 
 .container {
     margin: 5px auto 5px auto;
-    background-color:rgba(125, 24, 51, 0.99);
+    background-color: rgba(125, 24, 51, 0.99);
     height: min-content;
     width: min-content;
     border-radius: 5px;
