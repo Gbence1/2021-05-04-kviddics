@@ -1,0 +1,126 @@
+body {
+    background-image: url(../src/img/background.png);
+    background-size: 50%;
+}
+
+.container {
+    margin: 5px auto 5px auto;
+    background-color:rgba(125, 24, 51, 0.99);
+    height: min-content;
+    width: min-content;
+    border-radius: 5px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    margin: auto 5px auto 5px;
+    padding: 5px 0px 0px 0px;
+}
+
+.bigpic {
+    height: 460px;
+    grid-row: 1/3;
+    border: 7px solid #ff9900;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.smallpic {
+    height: 218px;
+    width: 218px;
+    border: 7px solid #ff9900;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.content {
+    margin: 20px 10px 0px 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+h1 {
+    margin: 20px 0px 0px 0px;
+}
+
+hr {
+    margin: auto 0px auto 0px;
+    color: #ffffff;
+    border-radius: 1px;
+    border-style: solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+.input {
+    margin: 20px auto -5px auto;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 25px auto 5px auto;
+}
+
+@media (max-width: 1200px) {
+    .bigpic {
+        height: 260px;
+        border: 4px solid #ff9900;
+    }
+
+    .smallpic {
+        height: 121px;
+        width: 121px;
+        border: 4px solid #ff9900;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background-size: 100%;
+    }
+
+    .bigpic {
+        height: 190px;
+        border: 4px solid #ff9900;
+    }
+
+    .smallpic {
+        height: 86px;
+        width: 86px;
+        border: 4px solid #ff9900;
+    }
+}
+
+@media (max-width: 520px) {
+    .images {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .bigpic {
+        grid-column: 1/4;
+        height: 200px;
+        border: 3px solid #ff9900;
+        margin-left: 25%;
+    }
+
+    .smallpic {
+        grid-row-start: 3;
+        height: 92px;
+        width: 92px;
+        border: 3px solid #ff9900;
+    }
+
+    .secondrow {
+        grid-row-start: 4;
+    }
+}
